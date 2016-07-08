@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.kn</groupId>
+    <artifactId>castleblack</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>castleblack</name>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.0.BUILD-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <cb.knightwatcher.version>1.0.0-SNAPSHOT</cb.knightwatcher.version>
+        <cb.common.version>1.0.0-SNAPSHOT</cb.common.version>
+        <cb.security.version>1.0.0-SNAPSHOT</cb.security.version>
+        <cb.questions.version>1.0.0-SNAPSHOT</cb.questions.version>
+        <cb.exams.version>1.0.0-SNAPSHOT</cb.exams.version>
+        <spring.boot.version>1.4.0.BUILD-SNAPSHOT</spring.boot.version>
+        <hibernate.version>5.1.0.Final</hibernate.version>
+        <lombok.version>1.16.8</lombok.version>
+        <orika.version>1.4.6</orika.version>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.kn.common</groupId>
+                <artifactId>common-api</artifactId>
+                <version>${cb.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kn.security</groupId>
+                <artifactId>accounts-api</artifactId>
+                <version>${cb.security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kn.security</groupId>
+                <artifactId>accounts-core</artifactId>
+                <version>${cb.security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kn.security</groupId>
+                <artifactId>accounts-rest-api</artifactId>
+                <version>${cb.security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kn.questions</groupId>
+                <artifactId>questions-api</artifactId>
+                <version>${cb.questions.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kn.questions</groupId>
+                <artifactId>questions-core</artifactId>
+                <version>${cb.questions.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kn.questions</groupId>
+                <artifactId>questions-rest-api</artifactId>
+                <version>${cb.questions.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.hibernate.javax.persistence</groupId>
+                        <artifactId>hibernate-jpa-2.0-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.1-api</artifactId>
+                <version>1.0.0.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>2.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>ma.glasnost.orika</groupId>
+                <artifactId>orika-core</artifactId>
+                <version>${orika.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- Spring Snapshot repository -->
+    <repositories>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/libs-snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <!-- Spring snapshot repository for plugins -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/libs-snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>

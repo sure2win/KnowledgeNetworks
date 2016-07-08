@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-security/accounts-api/accounts-api.iml" filepath="$PROJECT_DIR$/../castleblack-security/accounts-api/accounts-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-security/accounts-core/accounts-core.iml" filepath="$PROJECT_DIR$/../castleblack-security/accounts-core/accounts-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-security/accounts-rest-api/accounts-rest-api.iml" filepath="$PROJECT_DIR$/../castleblack-security/accounts-rest-api/accounts-rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/castleblack.iml" filepath="$PROJECT_DIR$/castleblack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-common/castleblack-common.iml" filepath="$PROJECT_DIR$/../castleblack-common/castleblack-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-questions/castleblack-questions.iml" filepath="$PROJECT_DIR$/../castleblack-questions/castleblack-questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-security/castleblack-security.iml" filepath="$PROJECT_DIR$/../castleblack-security/castleblack-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-common/common-api/common-api.iml" filepath="$PROJECT_DIR$/../castleblack-common/common-api/common-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-questions/questions-api/questions-api.iml" filepath="$PROJECT_DIR$/../castleblack-questions/questions-api/questions-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-questions/questions-core/questions-core.iml" filepath="$PROJECT_DIR$/../castleblack-questions/questions-core/questions-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-questions/questions-rest-api/questions-rest-api.iml" filepath="$PROJECT_DIR$/../castleblack-questions/questions-rest-api/questions-rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-questions/questions-server/questions-server.iml" filepath="$PROJECT_DIR$/../castleblack-questions/questions-server/questions-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../castleblack-security/security-server/security-server.iml" filepath="$PROJECT_DIR$/../castleblack-security/security-server/security-server.iml" />
+    </modules>
+  </component>
+</project>
