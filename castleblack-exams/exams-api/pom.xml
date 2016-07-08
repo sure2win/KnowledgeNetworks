@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>castleblack-exams</artifactId>
+        <groupId>com.kn.exams</groupId>
+        <version>${cb.exams.version}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>exams-api</artifactId>
+    <name>castleblack-exams-api</name>
+    <description>CastleBlack exams api module</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.kn.common</groupId>
+            <artifactId>common-api</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>

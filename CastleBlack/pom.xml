@@ -76,6 +76,21 @@
                 <version>${cb.questions.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.kn.exams</groupId>
+                <artifactId>exams-api</artifactId>
+                <version>${cb.exams.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kn.exams</groupId>
+                <artifactId>exams-core</artifactId>
+                <version>${cb.exams.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kn.exams</groupId>
+                <artifactId>exams-rest-api</artifactId>
+                <version>${cb.exams.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
                 <version>${hibernate.version}</version>
