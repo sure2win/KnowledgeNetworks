@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.kn.gateway</groupId>
-    <artifactId>knight-watcher</artifactId>
-    <version>${cb.gateway.version}</version>
+    <groupId>com.kn.config</groupId>
+    <artifactId>castleblack-config-server</artifactId>
+    <version>${cb.config.version}</version>
 
-    <name>Knight-Watcher</name>
-    <description>Knight watcher API gateway</description>
+    <name>castleblack-config-server</name>
+    <description>Castlblack configuration server</description>
     <packaging>pom</packaging>
 
     <parent>
@@ -19,18 +19,9 @@
     </parent>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zuul</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
     </dependencies>
 

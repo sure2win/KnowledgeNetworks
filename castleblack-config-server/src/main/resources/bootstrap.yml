@@ -1,0 +1,15 @@
+
+server:
+  port: 8888
+
+spring:
+  application:
+      name: configserver
+  cloud:
+    config:
+      uri: http://localhost:8888
+      server:
+        git:
+          uri: https://krishna_chaitanya_chaitu@bitbucket.org/krishna_chaitanya_chaitu/config-repo.git
+          username: chaitanya415@gmail.com
+          password: Newyear#16

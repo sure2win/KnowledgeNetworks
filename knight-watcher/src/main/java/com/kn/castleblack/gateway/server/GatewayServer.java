@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 /**
  * Created by kirshnachaitanya.gumma on 27/04/16.
  */
-@SpringBootApplication(scanBasePackages = {"com.kn.gateway.knightwatcher.**.config"})
+@SpringBootApplication(scanBasePackages = {"com.kn.castleblack.gateway.**.config"})
 @EnableZuulProxy
 public class GatewayServer implements HealthIndicator{
 
