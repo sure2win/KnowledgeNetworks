@@ -1,15 +1,33 @@
-
 server:
-  port: 8888
+  port: 0
 
 spring:
   application:
-      name: configserver
+      name: CONFIGSERVER
   cloud:
     config:
-      uri: http://localhost:8888
       server:
-        git:
-          uri: https://krishna_chaitanya_chaitu@bitbucket.org/krishna_chaitanya_chaitu/config-repo.git
-          username: chaitanya415@gmail.com
-          password: Newyear#16
+          git:
+            uri: https://github.com/sure2win/IronBank.git
+            repos:
+              development:
+                pattern:
+                  - '*/dev*'
+                uri: https://github.com/sure2win/IronBank.git
+              staging:
+                pattern:
+                  - '*/qa*'
+                  - '*/prod*'
+                uri: https://krishna_chaitanya_chaitu@bitbucket.org/krishna_chaitanya_chaitu/config-repo.git
+                username: chaitanya415@gmail.com
+                password: Newyear#16
+              native:
+                pattern:
+                  - '*default*'
+                  - '*native*'
+                  - '*local*'
+                uri: file:///${user.dir}/../IronBank
+
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.uuid}}

@@ -16,14 +16,26 @@
         <version>1.5.1.RELEASE</version>
     </parent>
 
+    <modules>
+        <module>../castleblack-common</module>
+        <module>../castleblack-security</module>
+        <module>../castleblack-exams</module>
+        <module>../castleblack-questions</module>
+        <module>../castleblack-config-server</module>
+        <module>../knight-watcher</module>
+        <module>../castleblack-eureka-server</module>
+        <module>../castleblack-hystrix-dashboard</module>
+    </modules>
+
     <properties>
         <cb.common.version>1.0.0-SNAPSHOT</cb.common.version>
         <cb.security.version>1.0.0-SNAPSHOT</cb.security.version>
         <cb.questions.version>1.0.0-SNAPSHOT</cb.questions.version>
         <cb.exams.version>1.0.0-SNAPSHOT</cb.exams.version>
-        <cb.cloud.version>1.0.0-SNAPSHOT</cb.cloud.version>
+        <cb.eureka.version>1.0.0-SNAPSHOT</cb.eureka.version>
         <cb.config.version>1.0.0-SNAPSHOT</cb.config.version>
         <cb.gateway.version>1.0.0-SNAPSHOT</cb.gateway.version>
+        <cb.hystrix.version>1.0.0-SNAPSHOT</cb.hystrix.version>
         <spring.boot.version>1.5.1.RELEASE</spring.boot.version>
         <hibernate.version>5.2.6.Final</hibernate.version>
         <lombok.version>1.16.8</lombok.version>
@@ -120,8 +132,8 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-netflix</artifactId>
-                <version>1.3.0.M1</version>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.SR5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

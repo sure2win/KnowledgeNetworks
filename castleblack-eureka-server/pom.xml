@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.kn.cloud</groupId>
-    <artifactId>castleblack-cloud</artifactId>
-    <version>${cb.cloud.version}</version>
+    <groupId>com.kn.eureka</groupId>
+    <artifactId>castleblack-eureka-server</artifactId>
+    <version>${cb.eureka.version}</version>
 
-    <name>castleblack-cloud</name>
-    <description>Castlblack cloud projects Parent</description>
+    <name>castleblack-eureka-server</name>
+    <description>Castlblack eureka server</description>
     <packaging>pom</packaging>
 
     <parent>

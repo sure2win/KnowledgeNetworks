@@ -10,7 +10,6 @@ import javax.ws.rs.ApplicationPath;
 /**
  * Created by kirshnachaitanya.gumma on 27/04/16.
  */
-@ApplicationPath("/knowledge")
 @Slf4j
 @Component
 public class SecurityServerConfig extends ResourceConfig {

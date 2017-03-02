@@ -6,6 +6,7 @@ import com.kn.castleblack.common.api.resource.AbstractRestResource;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.stereotype.Component;
 
 import javax.ws.rs.Path;
@@ -17,6 +18,7 @@ import javax.ws.rs.Path;
 @Data
 @Slf4j
 @Component
+@EnableCircuitBreaker
 @Path("accounts")
 public class AccountResource extends AbstractRestResource<AccountDTO, String> {
 
