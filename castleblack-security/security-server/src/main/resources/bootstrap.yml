@@ -11,6 +11,7 @@ spring:
       retry:
         multiplier:  1.1
         initial-interval: 1000
-        max-attempts: 6
+        max-attempts: 5
         max-interval: 2000
+
 
