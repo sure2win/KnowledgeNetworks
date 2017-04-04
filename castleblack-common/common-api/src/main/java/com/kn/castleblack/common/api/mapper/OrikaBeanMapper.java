@@ -4,8 +4,6 @@ package com.kn.castleblack.common.api.mapper;
  * Created by kirshnachaitanya.gumma on 28/04/16.
  */
 
-import java.util.Map;
-
 import ma.glasnost.orika.Converter;
 import ma.glasnost.orika.Mapper;
 import ma.glasnost.orika.MapperFactory;
@@ -13,11 +11,12 @@ import ma.glasnost.orika.converter.ConverterFactory;
 import ma.glasnost.orika.impl.ConfigurableMapper;
 import ma.glasnost.orika.impl.DefaultMapperFactory;
 import ma.glasnost.orika.metadata.ClassMapBuilder;
-
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
+
+import java.util.Map;
 
 /**
  * Orika mapper exposed as a Spring Bean. It contains the configuration for the mapper factory and factory builder. It will scan

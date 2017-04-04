@@ -2,7 +2,6 @@ package com.kn.castleblack.common.api.dto;
 
 import lombok.Data;
 
-import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.util.Date;
 
