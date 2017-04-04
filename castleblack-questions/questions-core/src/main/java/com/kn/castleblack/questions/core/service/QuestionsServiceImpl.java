@@ -1,6 +1,5 @@
 package com.kn.castleblack.questions.core.service;
 
-import com.kn.castleblack.common.api.exception.CastleBlackException;
 import com.kn.castleblack.common.api.service.impl.AbstractServiceImpl;
 import com.kn.castleblack.questions.api.model.QuestionDTO;
 import com.kn.castleblack.questions.api.service.QuestionsService;

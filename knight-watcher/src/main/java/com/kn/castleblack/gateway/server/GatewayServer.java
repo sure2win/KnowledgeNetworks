@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.retry.annotation.EnableRetry;
-import org.springframework.retry.annotation.Retryable;
 
 /**
  * Created by kirshnachaitanya.gumma on 27/04/16.

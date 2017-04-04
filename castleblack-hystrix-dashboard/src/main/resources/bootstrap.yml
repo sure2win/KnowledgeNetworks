@@ -1,7 +1,27 @@
+server:
+  port: 8765
+
 spring:
   application:
     name: hystrix-server
   cloud:
     config:
-      uri: http://localhost:8888
-      name: hystrix-server, eureka-client
+      name: eureka-client
+      discovery:
+        enabled: true
+        service-id: CONFIGSERVER
+      fail-fast: true
+      retry:
+        multiplier:  1.1
+        initial-interval: 1000
+        max-attempts: 5
+        max-interval: 2000
+
+InstanceDiscovery:
+  impl: com.netflix.turbine.discovery.EurekaInstanceDiscovery.class
+
+turbine:
+  aggregator:
+    #clusterConfig: SECURITY-SERVICE,QUESTIONS-SERVICE
+  appConfig: security-service,questions-service,gateway
+  clusterNameExpression: "'default'"

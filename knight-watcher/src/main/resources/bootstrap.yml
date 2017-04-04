@@ -6,6 +6,7 @@ spring:
     name: GATEWAY
   cloud:
     config:
+      name: eureka-client
       discovery:
         enabled: true
         service-id: CONFIGSERVER
@@ -15,12 +16,6 @@ spring:
         initial-interval: 1000
         max-attempts: 6
         max-interval: 2000
-      name: eureka-client
-
-logging:
-  level:
-    ROOT: DEBUG
 
 zuul:
   retryable: true
-
